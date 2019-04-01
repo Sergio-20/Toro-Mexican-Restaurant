@@ -1,0 +1,55 @@
+  /**General Elements**/
+  body {
+    overflow-y: hidden;
+  }
+
+  input:focus, textarea:focus, input:hover, textarea:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid lime;
+  }
+
+  input[type="submit"], span {
+    font-family: Righteous;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  footer {
+    bottom: -5.5%;
+    height: 22.5%;
+    position: relative;
+  }
+
+  /**Media Queries**/
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #map {
+      width: 220px !important;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #map {
+      width: 320px !important;
+    }
+
+    .col-xs-6 {
+      width: 20%;
+    }
+
+    footer {
+      height: 15%;
+    }
+
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    form {
+      width: 22em;
+    }
+
+  }

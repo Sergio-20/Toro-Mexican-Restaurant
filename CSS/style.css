@@ -1,0 +1,275 @@
+  /*All Selector*/
+  * {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    z-index: 0;
+  }
+
+  /**General Elements**/
+  footer a {
+    color: white;
+    text-decoration: none !important;
+  }
+
+  footer a:hover {
+    color: rgba(215,215,215,0.2);
+  }
+
+  footer div+hr {
+    background-color: white;
+    color: white;
+  }
+
+  header {
+    background-color: #212121;
+  }
+
+  header nav h1 {
+    background: none;
+    background-color: #212121;
+    color: white !important;
+    cursor: pointer;
+    font-family: 'Parisienne', cursive;
+    font-weight: bolder;
+  }
+
+  header nav button {
+    background-color: black;
+    cursor: pointer;
+    font-family: 'Signika', sans-serif;
+    font-weight: bolder !important;
+  }
+
+  hr {
+    background-color: red;
+    color: red;
+    width: 50%;
+  }
+
+  main {
+    position: relative;
+    right: -20%;
+  }
+
+  main, main div h2 {
+    overflow: hidden;
+  }
+
+  /**Classes**/
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .copyright {
+    color: white;
+    text-align: center;
+  }
+
+  .fa-caret-square-up {
+    color: #0000EE;
+    font-size: 4em;
+    position: fixed;
+    right: 1.5%;
+    top: 60%;
+    z-index: 1;
+  }
+
+  .fa-phone-volume, .fa-comment {
+    color: #0000EE;
+    font-size: 3em;
+    left: 1.5%;
+    position: fixed;
+    top: 10%;
+    z-index: 1;
+  }
+
+  .fa-window-close {
+    color: red;
+    display: none;
+    font-size: 0.4em;
+  }
+
+  .lorem-ipsum {
+    background-color: #212121;
+    color: #FFF;
+    display: none;
+    font-size: 1em;
+    height: 50%;
+    position: relative;
+    right: -5%;
+    width: 50%;
+  }
+
+  .menu-details, h1 {
+    background: #101010;
+    color: #A32922 !important;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  /**IDs**/
+  #item-meta {
+    border: 2px solid black;
+    height: 50%;
+    left: 7%;
+    overflow: hidden;
+    position: fixed;
+    top: 10em;
+    width: 30%;
+  }
+
+  #item-meta img {
+    top: 8%;
+  }
+
+  #menu, h1 {
+    overflow: hidden;
+  }
+
+  #menu #appetizers span {
+    display: none;
+  }
+
+  #menu-header {
+    cursor: default;
+  }
+
+  /**Media Queries Below**/
+
+  /**Smartphones**/
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /**IDs**/
+    #burritoImg {
+      width: 60%;
+    }
+
+    #item-meta {
+      /*height: 11% !important;
+      top: 45%;*/
+      display: none;
+    }
+
+    #menu {
+      position: relative !important;
+      right: 20% !important;
+    }
+
+    #phone-number {
+      display: inline;
+      font-size: 0.5em;
+    }
+
+    /**Classes**/
+    .fa-phone-volume {
+      position: relative;
+    }
+
+  }
+
+  /**Tablets**/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /**Classes**/
+    .fa-phone-volume, .fa-comment {
+      display: block;
+      top: 5%;
+    }
+
+    /**IDs**/
+    #item-meta {
+      height: 25% !important;
+    }
+
+    #phone-number {
+      display: inline;
+      font-size: 0.5em;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .fa-phone-volume, .fa-caret-square-up, #item-meta, #menu {
+      display: none;
+    }
+
+  }
+
+  /**Laptops**/
+
+  @media only screen and (min-width: 1024px) {
+
+    #phone-number {
+      display: none;
+      font-size: 0.5em;
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1100px) {
+
+    footer a {
+      position: relative !important;
+      left: 10% !important;
+    }
+
+    #item-meta {
+      height: 35% !important;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+
+    footer a {
+      position: relative !important;
+      left: 10% !important;
+    }
+
+    #item-meta {
+      height: 40%;
+    }
+
+  }
+
+  @media only screen and (min-width: 1300px) {
+
+    footer a {
+      position: relative !important;
+      left: 10% !important;
+    }
+
+    .fa-phone-volume, .fa-comment {
+      top: 5%;
+    }
+
+    #item-meta {
+      height: 50%;
+    }
+
+  }
+
+  /**Large Laptops/PCs**/
+  @media only screen and (min-width: 1400px) {
+
+    footer a {
+      position: relative !important;
+      left: 15% !important;
+    }
+
+    .fa-phone-volume, .fa-comment {
+      top: 5%;
+    }
+
+    #item-meta {
+      height: 48%;
+    }
+
+  }

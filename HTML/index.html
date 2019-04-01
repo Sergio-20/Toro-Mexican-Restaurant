@@ -1,0 +1,350 @@
+<html>
+
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="description" content="Award winning Mexican Food with custom combos, and with great service!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--MD Bootstrap-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <!--External Stylesheets-->
+    <link href="../CSS/style.css" rel="stylesheet">
+
+    <!--Website Icon-->
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <!--SEO-->
+    <link href="https://sergio-20.github.io/Toro-Mexican-Restaurant/HTML/index.html" rel="canonical">
+    <meta name="description" content="Welcome to Toro Mexican Restaurant! We are located in Marina Del Rey, CA. We offer delightfully delicious Mexican Food that surpasses your expectations."/>
+    <meta name="keywords" content="Toro, Restaurant, Mexican, Mexican Restaurant, Toro Mexican Restaurant, Menu, Toro Menu, Toro Mexican Restaurant Menu, Mexican Restaurant Menu"/>
+    <title>Toro Mexican Restaurant | Menu</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav class="container">
+        <div class="row">
+          <button id="menu-nav" class="btn btn-dark text-light col-xs-3 offset-xs-1" onclick="toMenu()">Menu</button>
+          <button id="catering-nav" class="btn btn-dark text-light col-xs-3 offset-xs-1" onclick="toCateringPage()">Catering</button>
+          <button id="contact-nav" class="btn btn-dark text-light col-xs-3 offset-xs-1" onclick="toContactPage()">Contact Us</button>
+          <button id="about" class="btn btn-dark text-light col-xs-3 offset-xs-1" onclick="toAboutPage()">About Us</button>
+          <h1 onclick="toMenu()">Toro Mexican Restaurant</h1>
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <div>
+        <a href="#"><i class="far fa-caret-square-up"></i></a>
+        <span>
+          <a ><i id="phone-icon" class="fas fa-phone-volume">
+          <span id="phone-number">(555) 555-5555</span>  <i class="far fa-window-close"></i></i></a>
+        </span>
+      </div>
+
+      <div id="item-meta">
+
+        <img class="col-sm-12" src="https://thumbs.dreamstime.com/z/menu-poster-background-chalk-blackboard-61471858.jpg" alt="Default Image"/>
+
+      </div>
+
+      <div id="menu" onmouseout="imgDefault()">
+        <br><br>
+        <h1 id="menu-header">Menu</h1>
+        <br>
+        <img class="center-block col-sm-6" id="burritoImg" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Toro Mexican Restaurant Burrito"/>
+        <br><br>
+        <div id="appetizers">
+          <h1>Appetizers</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgGuacamole()">
+              <h2>Fresh Guacamole</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgQuesadillas()">
+              <h2>Cheese Quesadillas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgNachos()">
+              <h2>Nachos</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="soups-salads">
+          <h1>Soup & Salads</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgTacoSalad()">
+              <h2>Taco Salad</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgFajitaSalad()">
+              <h2>Fajitas Salad</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgChickenSalad()">
+              <h2>Chicken Salad</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="fajitas">
+          <h1>Fajitas</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgChickenFajita()">
+              <h2>Chicken Fajitas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgShrimpFajita()">
+              <h2>Shrimp Fajitas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgSteakFajita()">
+              <h2>Steak Fajitas</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="custom-combo">
+          <h1>Create Your Own Combo</h1><br>
+          <div class="menu-details">
+            <div>
+              <h2>Basico</h2>
+              <h6>Unlimited drinks and a main dish.</h6><br>
+            </div>
+            <div>
+              <h2>Supremo</h2>
+              <h6>Unlimited cervezas and choose up to three items.</h6><br>
+            </div>
+            <div>
+              <h2>Macho</h2>
+              <h6>No limit to what you decide to eat!</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="specials">
+          <h1>Toro Specials</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgCarneAsada()">
+              <h2>Carne Asada</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgCarnitas()">
+              <h2>Carnitas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgChileVerde()">
+              <h2>Chile Verde</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="enchiladas">
+          <h1>Enchiladas</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgChickenEnchilada()">
+              <h2>Chicken Enchiladas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgShrimpEnchilada()">
+              <h2>Shrimp Enchiladas</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgSpinachEnchilada()">
+              <h2>Spinach Enchiladas</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="tacos-burritos">
+          <h1>Tacos & Burritos</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgCustomBurrito()">
+              <h2>Custom Burrito</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgCustomTaco()">
+              <h2>Custom Taco</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgCarneAsadaBurrito()">
+              <h2>Carne Asada Burrito</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="lunch">
+          <h1>Lunch</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgCustomTaco()">
+              <h2>Custom Taco/Burrito</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgFajitaSalad()">
+              <h2>Custom Salad</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgSteakFajita()">
+              <h2>Custom Fajitas</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="desserts">
+          <h1>Desserts</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgCarrotCake()">
+              <h2>Carrot Cake</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgFlan()">
+              <h2>Flan</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgIceCream()">
+              <h2>Ice Cream</h2>
+              <h6>Prepared just the way you like it</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="margaritas">
+          <h1>Margaritas</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgMangoMargarita()">
+              <h2>Mango Margarita</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgStrawberryMargarita()">
+              <h2>Strawberry Margarita</h2>
+              <h6>Prepared just the way you like it</h6><br>
+            </div>
+            <div onmouseover="imgSurpriseMargarita()">
+              <h2>Surprise Me Margarita</h2>
+              <h6>Delicious ingredients that are not revealed until it is ready to eat!</h6>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="cervezas">
+          <h1>Cervezas</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgBeer()">
+              <h2>Bottled Beers</h2>
+              <h6>Many beer brands</h6><br>
+            </div>
+            <div onmouseover="imgVodka()">
+              <h2>Vodka</h2>
+              <h6>Can you handle it?</h6><br>
+            </div>
+          </div>
+        </div><hr>
+
+        <div id="wine">
+          <h1>Wines</h1><br>
+          <div class="menu-details">
+            <div onmouseover="imgWine()">
+              <h2>Wines</h2>
+              <h6>Many wine brands</h6><br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br>
+
+      <div class="lorem-ipsum">
+        <h1>Privacy Policy</h1><i class=".fa-window-close"></i>
+        <br><br>
+        <h3>
+          Echo park food truck tote bag meh scenester venmo pug thundercats, next level vinyl flexitarian chillwave ethical master cleanse try-hard. Kogi meggings affogato kitsch, waistcoat meditation whatever next level tumblr crucifix cronut unicorn pitchfork normcore. Fingerstache man bun semiotics photo booth gastropub leggings occupy poke. Bushwick chillwave normcore literally taiyaki. Taxidermy cardigan kickstarter, jean shorts activated charcoal quinoa aesthetic slow-carb letterpress trust fund food truck live-edge vaporware normcore. Vice glossier helvetica normcore palo santo wayfarers food truck paleo DIY hoodie chia pinterest.
+
+          Gastropub yuccie keffiyeh, kinfolk tofu waistcoat fingerstache. Actually cold-pressed artisan fashion axe fam, chillwave williamsburg jean shorts banjo. +1 typewriter butcher, vaporware jianbing gentrify cred neutra. Tousled poke everyday carry distillery pabst truffaut cray green juice glossier. Church-key lo-fi ennui schlitz. Single-origin coffee offal kombucha salvia umami activated charcoal.
+
+          La croix mlkshk austin, migas 8-bit green juice photo booth. Thundercats squid artisan banh mi succulents celiac portland listicle gluten-free dreamcatcher venmo coloring book. Williamsburg hashtag palo santo, direct trade shaman pug art party craft beer YOLO thundercats skateboard subway tile gentrify. Franzen synth literally flannel beard dreamcatcher.
+
+          Retro 8-bit yr gastropub, kombucha chicharrones pickled cold-pressed man bun la croix keffiyeh YOLO jean shorts 3 wolf moon keytar. Four loko tattooed lyft raw denim, austin listicle tbh leggings edison bulb pug jean shorts direct trade iceland pinterest. Blue bottle hoodie cardigan waistcoat selfies farm-to-table, fingerstache la croix artisan offal pabst before they sold out food truck synth paleo. Flannel vexillologist hexagon fingerstache flexitarian thundercats, venmo butcher next level bushwick etsy.
+
+          Lyft poke cred cardigan viral echo park. Farm-to-table kickstarter put a bird on it master cleanse. XOXO PBR&B snackwave, semiotics slow-carb lyft synth godard single-origin coffee heirloom unicorn jianbing pok pok readymade vaporware. Swag meditation distillery, chicharrones salvia affogato iceland stumptown butcher pok pok mixtape freegan cardigan 3 wolf moon prism.
+
+          Narwhal gastropub iPhone meh. Small batch pickled hashtag locavore kombucha. Portland fingerstache raw denim, disrupt butcher irony shaman. Tumeric normcore iPhone narwhal affogato keytar, 3 wolf moon banjo plaid gluten-free portland. Shoreditch offal authentic bitters cred, yuccie 3 wolf moon gluten-free squid lo-fi.
+
+          Truffaut +1 chillwave skateboard. Art party everyday carry gochujang brunch cred XOXO salvia farm-to-table. Pickled skateboard synth occupy. Cliche taiyaki locavore readymade seitan lyft 8-bit yr. Ugh retro gastropub hexagon selvage lyft.
+
+          Ugh paleo hoodie ethical. Pork belly post-ironic hammock umami portland, mumblecore wolf mustache tousled. Subway tile kinfolk deep v locavore, pickled shoreditch chicharrones. Taxidermy hammock cronut glossier blog retro lyft irony.
+
+          Snackwave enamel pin XOXO bespoke DIY authentic freegan biodiesel hexagon pickled helvetica poutine. Cornhole green juice scenester, bespoke art party banh mi vegan fashion axe pitchfork put a bird on it blog. YOLO umami fanny pack gluten-free. Slow-carb tacos cornhole retro helvetica yuccie, +1 shaman sartorial food truck. Organic viral banh mi, tumeric gentrify gluten-free letterpress selvage tilde put a bird on it taxidermy palo santo XOXO schlitz. Prism mixtape gentrify cronut marfa messenger bag listicle green juice pork belly activated charcoal squid iPhone kombucha hexagon.
+
+          Crucifix blue bottle pork belly aesthetic godard. Art party sustainable vice glossier tacos. Blue bottle messenger bag vinyl fixie unicorn affogato fashion axe salvia occupy copper mug cliche. Deep v artisan subway tile shabby chic post-ironic air plant glossier hella XOXO lomo gentrify. Lyft copper mug pabst iPhone paleo cray jean shorts lomo keytar keffiyeh vegan air plant celiac health goth cardigan.
+
+          Green juice prism echo park coloring book, lumbersexual disrupt etsy tote bag meggings enamel pin franzen. Affogato normcore knausgaard mumblecore cloud bread. Franzen poutine man bun intelligentsia kinfolk iPhone. 90's you probably haven't heard of them unicorn, pok pok copper mug humblebrag man bun portland. Single-origin coffee listicle gluten-free, dreamcatcher crucifix edison bulb squid bicycle rights pabst brunch biodiesel street art mumblecore raclette. Whatever echo park deep v, PBR&B typewriter shoreditch fashion axe kombucha butcher kale chips fanny pack intelligentsia.
+
+          Pork belly mumblecore thundercats small batch master cleanse narwhal schlitz cloud bread bespoke jianbing raclette. Chia squid mlkshk truffaut lyft snackwave franzen, post-ironic brunch cronut. Meditation slow-carb intelligentsia, pitchfork YOLO hot chicken gochujang succulents shabby chic put a bird on it cardigan banjo distillery locavore. Chambray jianbing deep v enamel pin pug flexitarian heirloom af wayfarers. 90's lomo unicorn everyday carry pour-over cold-pressed affogato hammock. Godard plaid yuccie glossier helvetica readymade single-origin coffee seitan iPhone flannel 90's ethical next level.
+
+          Copper mug literally put a bird on it, taiyaki af man bun quinoa locavore live-edge lumbersexual tofu tbh crucifix activated charcoal. Succulents ethical hammock offal normcore chia fashion axe. Gochujang activated charcoal yuccie, slow-carb raw denim tbh thundercats skateboard street art. Jean shorts squid iceland, cliche snackwave lo-fi tumeric aesthetic vape VHS.
+
+          Intelligentsia you probably haven't heard of them pok pok, forage lomo YOLO direct trade cloud bread disrupt ethical vegan. Fam 90's air plant kombucha post-ironic irony yuccie, gastropub unicorn glossier vape. Raclette 8-bit glossier biodiesel knausgaard freegan, edison bulb polaroid. Plaid gentrify offal fixie chia.
+        </h3>
+      </div>
+
+    </main>
+
+    <br><br>
+
+    <footer class="btn-dark">
+
+      <div class="col-sm-4 center-block">
+        <a href="about page.html">About Us</a>
+        <a href="catering page.html">Catering</a>
+        <a href="contact page.html">Contact Us</a>
+        <a class="privacy-policy">Privacy Policy</a>
+      </div><hr>
+      <h4 class="copyright">&copy 2019 Toro Mexican Restaurant</h4>
+
+    </footer>
+
+    <!--Javascript-->
+    <script type="text/javascript" src="../Javascript/navigation.js"></script>
+    <script type="text/javascript" src="../Javascript/menu hover.js"></script>
+
+    <!--jQuery-->
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+        <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../Javascript/animations.js"></script>
+
+  </body>
+
+</html>
